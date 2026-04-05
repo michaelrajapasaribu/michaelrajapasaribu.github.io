@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click and shop! | Vans Indonesia</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Karla', sans-serif;
+            background-color: #e8e8e8;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 480px;
+            min-height: 100vh;
+            border-radius: 20px;
+            padding: 30px 20px 60px 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+
+
+        .header {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .foto-profil {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: contain;
+            border: 2px solid #e0e0e0;
+            margin-bottom: 12px;
+        }
+
+        .nama-profil {
+            font-size: 22px;
+            font-weight: 700;
+            color: #000000;
+        }
+
+
+        .daftar-link {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 30px;
+        }
+
+        .tombol-link {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            border-radius: 999px;
+            box-shadow: 3px 4px 0px #000000;
+            padding: 10px 16px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: 500;
+            font-size: 15px;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+            position: relative;
+        }
+
+        .tombol-link:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 5px 0px #000000;
+        }
+
+        .tombol-link:active {
+            transform: translate(2px, 2px);
+            box-shadow: 1px 2px 0px #000000;
+        }
+
+        .ikon-tombol {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .label-tombol {
+            flex: 1;
+            text-align: center;
+        }
+
+
+        .sosial-media {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .ikon-sosial {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #000000;
+            transition: transform 0.2s ease;
+        }
+
+        .ikon-sosial:hover {
+            transform: scale(1.15);
+        }
+
+        .ikon-sosial svg {
+            width: 28px;
+            height: 28px;
+            fill: currentColor;
+        }
+
+
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: #888888;
+        }
+
+        .footer a {
+            color: #888888;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer span {
+            margin: 0 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="header">
+            <img class="foto-profil"
+                src="https://ugc.production.linktr.ee/aT3TJ63RtS2hIBToVo0M_L2h0gI23B9nSRTU2?io=true&size=avatar-v3_0"
+                alt="Vans Indonesia" />
+            <h1 class="nama-profil">Click and shop!</h1>
+        </div>
+
+        <div class="daftar-link">
+
+            <a class="tombol-link" href="https://wa.me/62895358487553" target="_blank">
+                <img class="ikon-tombol"
+                    src="https://ugc.production.linktr.ee/26c51b85-d538-4b60-8a98-6048156e368a_image.png?io=true&size=thumbnail-stack_v1_0"
+                    alt="Shop From Home" />
+                <span class="label-tombol">Shop From Home</span>
+            </a>
+
+            <a class="tombol-link" href="https://id.shp.ee/Ld6nGo4" target="_blank">
+                <img class="ikon-tombol"
+                    src="https://www.freelogovectors.net/wp-content/uploads/2023/04/shopeelogo-freelogovectors.net_.png"
+                    alt="Shopee" />
+                <span class="label-tombol">Shopee Official Store</span>
+            </a>
+
+            <a class="tombol-link" href="https://blibli.onelink.me/aFLN/vansbio" target="_blank">
+                <img class="ikon-tombol"
+                    src="data:image/png;base64,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"
+                    alt="Blibli" />
+                <span class="label-tombol">Blibli Official Store</span>
+            </a>
+
+            <a class="tombol-link" href="https://www.zalora.co.id/c/vans/b-142" target="_blank">
+                <img class="ikon-tombol"
+                    src="data:image/png;base64,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"
+                    alt="Zalora" />
+                <span class="label-tombol">Zalora Official Store</span>
+            </a>
+
+            <a class="tombol-link"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeuItPkMOeEzJAwbVChxzACxV2aI8J_HapjYmWrUj5HmWOv0w/viewform"
+                target="_blank">
+                <img class="ikon-tombol"
+                    src="https://ugc.production.linktr.ee/19d1b250-b352-483f-b6ea-3a157120f108_image.png?io=true&size=thumbnail-stack_v1_0"
+                    alt="Join Membership" />
+                <span class="label-tombol">Join Membership</span>
+            </a>
+
+        </div>
+
+        <div class="sosial-media">
+
+            <a class="ikon-sosial" href="https://www.facebook.com/vansofficialID" target="_blank" title="Facebook">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M23 12C23 5.92487 18.0751 0.999996 12 0.999996C5.92488 0.999996 1 5.92487 1 12C1 17.1588 4.55146 21.4874 9.34266 22.6761V15.3614H7.07438V12H9.34266V10.5516C9.34266 6.80751 11.037 5.07215 14.7128 5.07215C15.4096 5.07215 16.6121 5.20877 17.104 5.34544V8.39261C16.8444 8.36529 16.3935 8.3516 15.8332 8.3516C14.0295 8.3516 13.3326 9.03484 13.3326 10.8112V12H16.9256L16.3084 15.3614H13.3326V22.9194C18.7792 22.2616 23 17.624 23 12Z" />
+                </svg>
+            </a>
+
+            <a class="ikon-sosial" href="https://instagram.com/vans.indo" target="_blank" title="Instagram">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C9.2912 2 8.94131 2 7.86907 2.05643C7.03985 2.07241 6.21934 2.22888 5.44244 2.51919C4.78781 2.77878 4.23476 3.11738 3.67043 3.68172C3.11738 4.23476 2.76749 4.78781 2.51919 5.45372C2.27088 6.08578 2.10158 6.80813 2.05643 7.88036C2.01129 8.94131 2 9.27991 2 12C2 14.7088 2 15.0474 2.05643 16.1196C2.10158 17.1919 2.28217 17.9255 2.51919 18.5576C2.77878 19.2122 3.11738 19.7652 3.67043 20.3296C4.23476 20.8826 4.78781 21.2325 5.44244 21.4808C6.08578 21.7291 6.80813 21.8984 7.86907 21.9436C8.94131 21.9887 9.27991 22 12 22C14.7088 22 15.0474 22 16.1196 21.9436C17.1806 21.8984 17.9142 21.7178 18.5463 21.4808C19.2137 21.2306 19.8184 20.8377 20.3183 20.3296C20.8826 19.7652 21.2212 19.2009 21.4695 18.5576C21.7178 17.9142 21.8871 17.1919 21.9436 16.1196C21.9887 15.0587 22 14.7201 22 12C22 9.2912 21.9887 8.9526 21.9436 7.88036C21.9225 7.05065 21.7622 6.23037 21.4695 5.45372C21.2189 4.78649 20.8261 4.18182 20.3183 3.68172C19.754 3.11738 19.2122 2.77878 18.5463 2.51919C17.7686 2.23315 16.9482 2.08051 16.1196 2.06772C15.0474 2.01129 14.7088 2 12 2ZM17.3386 5.46501C17.6559 5.46501 17.9602 5.59106 18.1846 5.81542C18.4089 6.03979 18.535 6.3441 18.535 6.6614C18.535 6.9787 18.4089 7.28301 18.1846 7.50737C17.9602 7.73174 17.6559 7.85779 17.3386 7.85779C17.0213 7.85779 16.717 7.73174 16.4926 7.50737C16.2683 7.28301 16.1422 6.9787 16.1422 6.6614C16.1422 6.3441 16.2683 6.03979 16.4926 5.81542C16.717 5.59106 17.0213 5.46501 17.3386 5.46501ZM12 6.86456C13.362 6.86456 14.6682 7.40561 15.6313 8.36869C16.5944 9.33178 17.1354 10.638 17.1354 12C17.1354 13.362 16.5944 14.6682 15.6313 15.6313C14.6682 16.5944 13.362 17.1354 12 17.1354C10.638 17.1354 9.33178 16.5944 8.36869 15.6313C7.40561 14.6682 6.86456 13.362 6.86456 12C6.86456 10.638 7.40561 9.33178 8.36869 8.36869C9.33178 7.40561 10.638 6.86456 12 6.86456ZM12 8.67043C11.1169 8.67043 10.2701 9.02122 9.64564 9.64564C9.02122 10.2701 8.67043 11.1169 8.67043 12C8.67043 12.8831 9.02122 13.7299 9.64564 14.3544C10.2701 14.9788 11.1169 15.3296 12 15.3296C12.8831 15.3296 13.7299 14.9788 14.3544 14.3544C14.9788 13.7299 15.3296 12.8831 15.3296 12C15.3296 11.1169 14.9788 10.2701 14.3544 9.64564C13.7299 9.02122 12.8831 8.67043 12 8.67043Z" />
+                </svg>
+            </a>
+
+            <a class="ikon-sosial" href="https://api.whatsapp.com/send?phone=6282117063535" target="_blank"
+                title="WhatsApp">
+                <svg viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19.7945 4.21258C17.7267 2.14211 14.9765 1.00129 12.0462 1.00024C6.00812 1.00024 1.09402 5.91382 1.09192 11.9535C1.09087 13.8842 1.59562 15.7688 2.55417 17.4296L1 23.1063L6.807 21.5831C8.40685 22.4561 10.2084 22.9157 12.0415 22.9162H12.0462C18.0832 22.9162 22.9979 18.0021 23 11.9624C23.001 9.03532 21.8628 6.28359 19.7945 4.21311V4.21258ZM17.0401 14.2477C16.7665 14.1107 15.4209 13.4488 15.1698 13.3575C14.9187 13.266 14.7365 13.2204 14.5542 13.4945C14.372 13.7687 13.8473 14.3854 13.6876 14.5676C13.5279 14.7504 13.3682 14.773 13.0946 14.6358C12.821 14.4988 11.9391 14.2099 10.8933 13.2776C10.0798 12.5517 9.53032 11.6557 9.3707 11.3815C9.21101 11.1073 9.35389 10.9592 9.49041 10.8232C9.61331 10.7003 9.76407 10.5033 9.90114 10.3436C10.0383 10.184 10.0834 10.0695 10.1748 9.88721C10.2662 9.70442 10.2205 9.5448 10.1522 9.40767C10.0839 9.27059 9.53667 7.92334 9.30818 7.37554C9.08598 6.84191 8.86017 6.91439 8.69261 6.90547C8.53292 6.89758 8.35069 6.89601 8.16791 6.89601C7.98512 6.89601 7.68886 6.96429 7.43781 7.23847C7.18677 7.51261 6.47978 8.17493 6.47978 9.52164C6.47978 10.8683 7.46042 12.1704 7.59749 12.3532C7.73457 12.536 9.52769 15.3003 12.2731 16.4863C12.926 16.7683 13.436 16.9369 13.8336 17.063C14.4891 17.2715 15.0857 17.2421 15.5574 17.1717C16.0832 17.0929 17.1767 16.5094 17.4047 15.8702C17.6326 15.2309 17.6326 14.6826 17.5644 14.5686C17.4961 14.4546 17.3133 14.3858 17.0396 14.2488L17.0401 14.2477Z" />
+                </svg>
+            </a>
+
+            <a class="ikon-sosial" href="mailto:vans.indonesia@navya.co.id" target="_blank" title="Email">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M4.30606 7.28017C4.14002 7.62375 4.06901 7.99473 4.03469 8.4148C3.99999 8.83953 3.99999 9.36401 4 10.0143V13.9857C3.99999 14.6359 3.99999 15.1604 4.03469 15.5852C4.07042 16.0225 4.14591 16.4066 4.32698 16.7619C4.6146 17.3264 5.07354 17.7854 5.63803 18.073C5.9934 18.2541 6.37752 18.3296 6.81483 18.3653C7.23955 18.4 7.76404 18.4 8.4143 18.4H15.5857C16.236 18.4 16.7605 18.4 17.1852 18.3653C17.6225 18.3296 18.0066 18.2541 18.362 18.073C18.9265 17.7854 19.3854 17.3264 19.673 16.7619C19.8541 16.4066 19.9296 16.0225 19.9653 15.5852C20 15.1604 20 14.6359 20 13.9857V10.0143C20 9.36401 20 8.83953 19.9653 8.4148C19.931 7.99473 19.86 7.62375 19.6939 7.28017L13.8997 12.0209C12.7946 12.9251 11.2054 12.9251 10.1003 12.0209L4.30606 7.28017Z" />
+                    <path
+                        d="M18.9609 6.3295C18.7792 6.17262 18.5783 6.0372 18.362 5.92696C18.0066 5.74588 17.6225 5.6704 17.1852 5.63467C16.7605 5.59997 16.236 5.59997 15.5857 5.59998H8.41432C7.76406 5.59997 7.23955 5.59997 6.81483 5.63467C6.37752 5.6704 5.9934 5.74588 5.63803 5.92696C5.42166 6.0372 5.2208 6.17262 5.03915 6.3295L10.8602 11.0922C11.5232 11.6347 12.4768 11.6347 13.1398 11.0922L18.9609 6.3295Z" />
+                </svg>
+            </a>
+
+            <a class="ikon-sosial" href="https://x.com/vansofficialID" target="_blank" title="X">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M17.8048 2.96973H20.8705L14.1394 10.6338L22.0034 21.0304H15.8321L11.0004 14.7125L5.46893 21.0304H2.40328L9.53424 12.8331L2.00342 2.96973H8.32798L12.6932 8.74114L17.8048 2.96973ZM16.7318 19.231H18.4313L7.43494 4.70248H5.60888L16.7318 19.231Z" />
+                </svg>
+            </a>
+
+        </div>
+
+        <div class="footer">
+            <a href="#">Cookie Preferences</a>
+            <span>•</span>
+            <a href="#">Report</a>
+            <span>•</span>
+            <a href="#">Privacy</a>
+            <span>•</span>
+            <a href="#">Explore</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
