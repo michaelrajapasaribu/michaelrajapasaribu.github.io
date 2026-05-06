@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Vans Indonesia — Off The Wall</title>
+  <meta name="description" content="Vans Indonesia - Brand footwear dan apparel streetwear ikonik sejak 1966.">
+  <meta name="keywords" content="vans, sepatu, indonesia, skate, streetwear">
+
+  <!-- Favicon -->
+  <link href="https://www.vans.co.nz/media/logo/stores/2/icon_512.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700;900&family=Jost:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS (Arsha template) -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* ══
+       VANS INDONESIA
+    ══*/
+
+    /* ── Accent colour ── */
+    :root {
+      --vans-red: #e8192c;
+      --vans-red-dark: #c0001f;
+    }
+
+    /* ── Sitename / Logo ── */
+    .sitename {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      letter-spacing: .12em;
+      font-size: 1.6rem;
+    }
+
+    /* ── Header tweak: bold red hover ── */
+    .navmenu a:hover,
+    .navmenu a.active {
+      color: var(--vans-red) !important;
+    }
+
+    .navmenu a.active::before {
+      background: var(--vans-red) !important;
+    }
+
+    /* ── CTA Button ── */
+    .btn-get-started {
+      background: var(--vans-red);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: .08em;
+      padding: 12px 32px;
+      border-radius: 0;
+      transition: background .2s, transform .15s;
+    }
+
+    .btn-get-started:hover {
+      background: var(--vans-red-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-getstarted {
+      background: var(--vans-red) !important;
+      border-radius: 0 !important;
+      font-weight: 700 !important;
+      letter-spacing: .06em !important;
+    }
+
+    .btn-getstarted:hover {
+      background: var(--vans-red-dark) !important;
+    }
+
+    /* ── Hero: massive bold headline ── */
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2.8rem, 6vw, 5.5rem);
+      line-height: 1.0;
+      letter-spacing: -.01em;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      opacity: .85;
+      max-width: 420px;
+      line-height: 1.75;
+    }
+
+    .hero .btn-watch-video {
+      color: #fff !important;
+    }
+
+    .hero .btn-watch-video i {
+      color: var(--vans-red);
+      font-size: 1.5rem;
+    }
+
+    .hero-img img {
+      filter: drop-shadow(0 24px 48px rgba(0, 0, 0, .45));
+      transition: transform .6s ease;
+    }
+
+    .hero-img img:hover {
+      transform: translateY(-8px) scale(1.02);
+    }
+
+    /* ── Marquee ticker below hero ── */
+    .vans-marquee {
+      background: var(--vans-red);
+      overflow: hidden;
+      padding: 10px 0;
+      white-space: nowrap;
+    }
+
+    .vans-marquee-track {
+      display: inline-flex;
+      gap: 52px;
+      animation: vMarquee 20s linear infinite;
+    }
+
+    @keyframes vMarquee {
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .vans-marquee-track span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: .72rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .85);
+    }
+
+    .vans-marquee-track span.hi {
+      color: #fff;
+    }
+
+    /* ── Section titles ── */
+    .section-title h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+    }
+
+    .section-title h2::after {
+      background: var(--vans-red) !important;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    /* ── Features / Why-Us: icon colour ── */
+    .why-us .icon-box i {
+      color: var(--vans-red);
+      font-size: 1.5rem;
+      margin-right: 14px;
+      margin-top: 3px;
+    }
+
+    .why-us .icon-box h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: .98rem;
+      letter-spacing: .02em;
+    }
+
+    .why-us .content h3 span {
+      color: #222;
+      font-style: italic;
+    }
+
+    .why-us .content h3 strong {
+      color: var(--vans-red);
+    }
+
+    /* ── Product Cards ── */
+    .service-item {
+      border-radius: 0 !important;
+      border-top: 3px solid transparent !important;
+      transition: border-color .25s, box-shadow .25s, transform .25s !important;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .service-item:hover {
+      border-top-color: var(--vans-red) !important;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, .12) !important;
+      transform: translateY(-6px);
+    }
+
+    .prod-img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: contain;
+      background: linear-gradient(135deg, #f7f5f2 0%, #ede9e4 100%);
+      border-radius: 0;
+      margin-bottom: 0;
+      transition: transform .4s ease;
+    }
+
+    .service-item:hover .prod-img {
+      transform: scale(1.05);
+    }
+
+    /* Badge tag on each card */
+    .prod-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--vans-red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: .6rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      z-index: 5;
+    }
+
+    .prod-badge.new {
+      background: #111;
+    }
+
+    .service-item h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: .03em;
+      margin-top: 14px;
+    }
+
+    .prod-price {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: .95rem;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .readmore {
+      color: var(--vans-red) !important;
+      font-weight: 700;
+    }
+
+    .service-item .icon i {
+      color: var(--vans-red);
+    }
+
+    /* ── Culture / Stats ── */
+    .stats {
+      padding: 80px 0;
+    }
+
+    .stats img {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 50px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .stats h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1.05;
+      text-transform: uppercase;
+      letter-spacing: -.01em;
+    }
+
+    .stats p {
+      opacity: .8;
+      line-height: 1.75;
+    }
+
+    .stats-item span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 3rem;
+      color: var(--vans-red);
+    }
+
+    .stats-item p {
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: .7rem;
+    }
+
+    /* ── Contact form submit ── */
+    .php-email-form button[type=submit] {
+      background: var(--vans-red);
+      border-radius: 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: background .2s, transform .15s;
+    }
+
+    .php-email-form button[type=submit]:hover {
+      background: var(--vans-red-dark);
+      transform: translateY(-2px);
+    }
+
+    .info-item i {
+      color: var(--vans-red) !important;
+    }
+
+    /* ── Footer ── */
+    .footer .sitename {
+      font-size: 1.8rem;
+      color: #111;
+    }
+
+    /* Redesigned Newsletter Box */
+    .footer-newsletter {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      border: 1px solid #eaeaea;
+    }
+
+    .footer-newsletter h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: #111;
+    }
+
+    .footer-newsletter p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .footer-newsletter .newsletter-form {
+      display: flex;
+      background: #fff;
+      padding: 6px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border: 1px solid #ddd;
+      transition: border-color 0.3s;
+    }
+
+    .footer-newsletter .newsletter-form:focus-within {
+      border-color: var(--vans-red);
+    }
+
+    .footer-newsletter input[type="email"] {
+      border: none;
+      padding: 10px 16px;
+      width: 100%;
+      outline: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9rem;
+      background: transparent;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .footer-newsletter input[type="submit"] {
+      background: var(--vans-red) !important;
+      color: #fff;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 6px !important;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      transition: background 0.3s, transform 0.2s;
+      cursor: pointer;
+    }
+
+    .footer-newsletter input[type="submit"]:hover {
+      background: var(--vans-red-dark) !important;
+      transform: translateY(-2px);
+    }
+
+    .social-links a:hover {
+      background: var(--vans-red) !important;
+      border-color: var(--vans-red) !important;
+    }
+
+    /* ── Scroll-top ── */
+    .scroll-top {
+      background: var(--vans-red) !important;
+      border-radius: 0 !important;
+    }
+
+    .scroll-top:hover {
+      background: var(--vans-red-dark) !important;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <!-- ══ HEADER ══ -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="#hero" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">VANS</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#features">About</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#culture">Budaya</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#products">Shop Now</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ══ HERO ══ -->
+    <section id="hero" class="hero section dark-background">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Off The Wall<br>Since '66</h1>
+            <p>Koleksi terbaru Vans Indonesia. Temukan gaya autentik yang menemani budaya skate, seni, dan komunitas
+              sejak 1966.</p>
+            <div class="d-flex">
+              <a href="#products" class="btn-get-started">Shop Now</a>
+              <a href="https://www.instagram.com/vansindonesia/"
+                class="glightbox btn-watch-video d-flex align-items-center ms-4">
+                <i class="bi bi-instagram"></i><span>Follow IG</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="https://assets.vans.com/image/upload/q_auto,f_auto/v1732138038/1978-1" class="img-fluid animated"
+              alt="Vans Old Skool">
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero -->
+
+    <!-- ══ MARQUEE TICKER ══ -->
+    <div class="vans-marquee">
+      <div class="vans-marquee-track">
+        <span class="hi">Old Skool</span><span>✦</span>
+        <span class="hi">Authentic</span><span>✦</span>
+        <span class="hi">SK8-Hi</span><span>✦</span>
+        <span class="hi">Classic Slip-On</span><span>✦</span>
+        <span class="hi">Era 59</span><span>✦</span>
+        <span>Off The Wall</span><span>✦</span>
+        <span>Since 1966</span><span>✦</span>
+        <span class="hi">Old Skool</span><span>✦</span>
+        <span class="hi">Authentic</span><span>✦</span>
+        <span class="hi">SK8-Hi</span><span>✦</span>
+        <span class="hi">Classic Slip-On</span><span>✦</span>
+        <span class="hi">Era 59</span><span>✦</span>
+        <span>Off The Wall</span><span>✦</span>
+        <span>Since 1966</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- ══ FEATURES / WHY US ══ -->
+    <section id="features" class="why-us section light-background" data-builder="section">
+      <div class="container-fluid">
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>"Off The Wall — Authentic Since 1966." </span><strong>@vansindonesia</strong></h3>
+              <p>Vans didirikan oleh Paul Van Doren di Anaheim, California. Sol waffle ikonik memberikan grip sempurna
+                di papan skateboard, menjadikannya favorit komunitas skater dunia — dan kini akar budaya streetwear
+                Indonesia.</p>
+            </div>
+
+            <div class="row gy-4 px-xl-5" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-md-6">
+                <div class="icon-box d-flex position-relative">
+                  <i class="bi bi-easel flex-shrink-0"></i>
+                  <div>
+                    <h4>Kreativitas Tanpa Batas</h4>
+                    <p>Vans adalah kanvas ekspresi dari seni, musik, hingga gaya berpakaian.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="icon-box d-flex position-relative">
+                  <i class="bi bi-people flex-shrink-0"></i>
+                  <div>
+                    <h4>Komunitas Pertama</h4>
+                    <p>Skater, musisi, kreator — mereka adalah jantung brand ini, bukan sekadar konsumen.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="icon-box d-flex position-relative">
+                  <i class="bi bi-shield-check flex-shrink-0"></i>
+                  <div>
+                    <h4>Otentisitas Sejati</h4>
+                    <p>Tidak ada basa-basi. Vans selalu autentik dalam setiap produk dan kampanye.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="icon-box d-flex position-relative">
+                  <i class="bi bi-globe flex-shrink-0"></i>
+                  <div>
+                    <h4>100+ Negara</h4>
+                    <p>Hadir di lebih dari 100 negara dengan komunitas global yang kuat dan beragam.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="https://assets.vans.com/image/upload/q_auto,f_auto/v1732138038/1966-2" class="img-fluid"
+              alt="Vans Skate" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Features -->
+
+    <!-- ══ PRODUCTS / SERVICES ══ -->
+    <section id="products" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Koleksi Ikonik</h2>
+        <p>Temukan koleksi sepatu dan apparel Vans Indonesia yang autentik, ikonik, dan penuh karakter.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <span class="prod-badge">Top Seller</span>
+              <div style="overflow:hidden">
+                <img
+                  src="https://assets.vans.com/images/t_img/c_fill,g_center,f_auto,h_573,e_unsharp_mask:100,w_458/dpr_2.0/v1747942442/VN000D3HY28-HERO/Old-Skool-Shoe-VANS-Black-White-HERO.png"
+                  alt="Old Skool" class="prod-img">
+              </div>
+              <div class="icon"><i class="bi bi-star-fill"></i></div>
+              <h3>Old Skool</h3>
+              <p>Black &amp; White · 15+ warna. Ikon skate terlaris sepanjang masa dengan Sidestripe™ ikonik.</p>
+              <p class="prod-price">Rp 1.250.000</p>
+              <a href="#" class="readmore stretched-link">Lihat Detail <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <span class="prod-badge new">New</span>
+              <div style="overflow:hidden">
+                <img
+                  src="https://assets.vans.com/images/t_img/c_fill,g_center,f_auto,h_573,e_unsharp_mask:100,w_458/dpr_2.0/v1750270765/VN000EE3BLK-HERO/Authentic-Shoe-VANS-Black-HERO.png"
+                  alt="Authentic" class="prod-img">
+              </div>
+              <div class="icon"><i class="bi bi-award"></i></div>
+              <h3>Authentic</h3>
+              <p>Archive Prints · Canvas. Siluet pertama Vans yang mengubah dunia — klasik dan tak lekang waktu.</p>
+              <p class="prod-price">Rp 950.000</p>
+              <a href="#" class="readmore stretched-link">Lihat Detail <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div style="overflow:hidden">
+                <img
+                  src="https://assets.vans.com/images/t_img/c_fill,g_center,f_auto,h_573,e_unsharp_mask:100,w_458/dpr_2.0/v1765307029/VN000D6YPIB-HERO/Classic-SlipOn-Checkerboard-Shoe-VANS-HERO.png"
+                  alt="Slip-On" class="prod-img">
+              </div>
+              <div class="icon"><i class="bi bi-lightning-charge"></i></div>
+              <h3>Classic Slip-On</h3>
+              <p>Checkerboard · Canvas. Tampil di film ikonik 1982 dan selamanya menjadi simbol pop culture.</p>
+              <p class="prod-price">Rp 850.000</p>
+              <a href="#" class="readmore stretched-link">Lihat Detail <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <span class="prod-badge">Best Pick</span>
+              <div style="overflow:hidden">
+                <img
+                  src="https://assets.vans.com/images/t_img/c_fill,g_center,f_auto,h_573,e_unsharp_mask:100,w_458/dpr_2.0/v1753917953/VN000D5IB8C-HERO/Sk8Hi-Shoe-VANS-Black-White-HERO.png"
+                  alt="SK8-Hi" class="prod-img">
+              </div>
+              <div class="icon"><i class="bi bi-trophy"></i></div>
+              <h3>SK8-Hi</h3>
+              <p>High-Top · Suede. Desain ankle support untuk skater serius, kini menjadi ikon fashion global.</p>
+              <p class="prod-price">Rp 1.450.000</p>
+              <a href="#" class="readmore stretched-link">Lihat Detail <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div style="overflow:hidden">
+                <img
+                  src="https://assets.vans.com/images/t_img/c_fill,g_center,f_auto,h_573,e_unsharp_mask:100,w_458/dpr_2.0/v1767212484/VN000SREBLK-ALT2/Sano-Tank-Top-VANS-ALT2.png"
+                  alt="Apparel" class="prod-img">
+              </div>
+              <div class="icon"><i class="bi bi-bag-heart"></i></div>
+              <h3>Sano Tank Top</h3>
+              <p>Tank Top. Koleksi pakaian kasual untuk tampilan autentik setiap hari.</p>
+              <p class="prod-price">Rp 350.000</p>
+              <a href="#" class="readmore stretched-link">Lihat Detail <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <span class="prod-badge new">Kids</span>
+              <div style="overflow:hidden">
+                <img
+                  src="https://assets.vans.com/images/t_img/c_fill,g_center,f_auto,h_573,e_unsharp_mask:100,w_458/dpr_2.0/v1767219879/VN000TPAWHT-ALT2/Kids-Have-a-Vans-Day-TShirt-VANS-ALT2.png"
+                  alt="Kids" class="prod-img">
+              </div>
+              <div class="icon"><i class="bi bi-heart"></i></div>
+              <h3>Kids Have a Vans Day T-Shirt</h3>
+              <p>Jadikan si kecil bagian dari keluarga besar Vans sejak dini.</p>
+              <p class="prod-price">Rp 650.000</p>
+              <a href="#" class="readmore stretched-link">Lihat Detail <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Products -->
+
+    <!-- ══ CULTURE / STATS ══ -->
+    <section id="culture" class="stats section dark-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://assets.vans.com/image/upload/q_auto,f_auto/v1732137916/2004-1" alt="Vans Culture"
+          data-aos="fade-in" class="img-fluid">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h2>Lebih Dari<br>Sekadar Sepatu.</h2>
+            <p>Sejak 1966, Vans tumbuh bersama komunitas skateboard, musik punk, dan seni jalanan. Di Indonesia, kami
+              hadir mendukung setiap kreator yang ingin berekspresi tanpa batas.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="row gy-4">
+              <div class="col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="58"
+                    data-purecounter-duration="1">58</span>
+                  <p>Tahun Berdiri</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="100"
+                    data-purecounter-duration="1">100</span>
+                  <p>Negara Hadir</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="500"
+                    data-purecounter-duration="1">500</span>
+                  <p>Model Tersedia</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span>∞</span>
+                  <p>Komunitas Global</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Culture -->
+
+    <!-- ══ CONTACT ══ -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kontak</h2>
+        <p>Hubungi kami untuk pertanyaan produk, kerjasama, atau kunjungi toko Vans terdekat di kotamu.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Alamat</h3>
+                  <p>Jl. Jenderal Sudirman No. 123, Jakarta Pusat, DKI Jakarta 10220</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Telepon</h3>
+                  <p>+62 21 1234 5678</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>info@vans.co.id</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h3>Jam Operasional</h3>
+                  <p>Senin – Jumat: 09.00 – 18.00 WIB<br>Sabtu: 10.00 – 15.00 WIB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Nama Kamu</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required>
+                </div>
+                <div class="col-12">
+                  <label for="subject-field" class="pb-2">Topik</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
+                </div>
+                <div class="col-12">
+                  <label for="message-field" class="pb-2">Pesan</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Pesan kamu sudah terkirim. Terima kasih!</div>
+                  <button type="submit">Kirim Pesan</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Contact -->
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="#" class="d-flex align-items-center">
+            <span class="sitename">VANS</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Off The Wall — Indonesia</p>
+            <p>Jl. Sudirman No. 123, Jakarta Pusat</p>
+            <p class="mt-3"><strong>Phone:</strong> +62 21 1234 5678</p>
+            <p><strong>Email:</strong> info@vans.co.id</p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">About</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#culture">Budaya</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Koleksi</h4>
+          <ul>
+            <li><a href="#">Old Skool</a></li>
+            <li><a href="#">Authentic</a></li>
+            <li><a href="#">SK8-Hi</a></li>
+            <li><a href="#">Slip-On</a></li>
+            <li><a href="#">Apparel</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Ikuti Vans Indonesia</h4>
+          <p>Dapatkan update terbaru koleksi, event komunitas, dan kolaborasi eksklusif Vans Indonesia.</p>
+          <form action="" method="post" class="php-email-form">
+            <div class="newsletter-form">
+              <input type="email" name="email" placeholder="user@gmail.com">
+              <input type="submit" value="Subscribe">
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Berhasil subscribe! Nantikan update terbaru.</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© 2026 <strong class="sitename">Vans Indonesia</strong>. All Rights Reserved.</p>
+      <p><span>Off The Wall Since '66 — <a href="#">vansindonesia.co.id</a></span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
